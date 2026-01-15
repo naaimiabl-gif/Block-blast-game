@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Blast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Block Blast</h1>
+        <div class="score-container">
+            <span>Score: </span><span id="score">0</span>
+        </div>
+        <div id="game-board"></div>
+        <div id="pieces-container">
+            <div class="piece-slot" id="piece-slot-0"></div>
+            <div class="piece-slot" id="piece-slot-1"></div>
+            <div class="piece-slot" id="piece-slot-2"></div>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Eindscore: <span id="final-score">0</span></p>
+            <button id="restart-btn">Opnieuw Spelen</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
